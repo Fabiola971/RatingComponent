@@ -1,0 +1,193 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Manrope', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    background-color: hsl(216, 12%, 8%); 
+    color: hsl(0, 0%, 100%);
+}
+
+p{
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.container{
+    background-color: hsl(213, 19%, 18%);
+    max-width: 405px;
+    min-width: 405px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    padding: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+
+.explication{
+    position: relative;
+}
+
+.explication h1, p{
+    margin-top: 20px;
+}
+
+.explication img, .value span{
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background-color: rgba( 255, 255, 255, 0.1);
+    padding: 15px;
+}
+
+.submit button{
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(25, 97%, 53%);
+    border: none;
+    width: 100%;
+    padding: 10px;
+    text-transform: uppercase;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+.submit button:hover{
+    color: hsl(25, 97%, 53%);
+    background-color: hsl(0, 0%, 100%);
+}
+
+.value{
+    display: flex;
+    justify-content: space-between;
+}
+
+.value span, p{
+    color: hsl(217, 12%, 63%);    
+}
+
+
+.value span:hover{
+    background-color: hsl(25, 97%, 53%);
+    color: hsl(0, 0%, 100%);
+}
+
+.value span:active{
+    background-color: hsl(216, 12%, 54%);
+    color: white;   
+}
+
+.value span, .submit button{
+    cursor: pointer;
+}
+
+.value, .submit{
+    margin-top: 30px;
+}
+
+@media screen and (max-width: 359px){
+    .container{
+        max-width: 339px;
+        min-width: 210px;    
+    }
+}
+
+@media (min-width: 360px) and (max-width: 450px){
+    .container{
+        max-width: 375px;
+        min-width: 360px;
+    }
+}
+
+/* *****************************THANKS********************** */
+.containerThanks{
+    background-color: hsl(213, 19%, 18%);
+    max-width: 400px;
+    min-width: 400px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    padding: 22px;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    visibility: hidden;
+    transition: transform 1s, 1s;
+    -webkit-transition: transform 1s, 1s;
+    -moz-transition: transform 1s, 1s;
+    -ms-transition: transform 1s, 1s;
+    -o-transition: transform 1s, 1s;
+}
+
+.containerThanks button{
+    color: hsl(25, 97%, 53%);
+    background-color: rgba( 255, 255, 255, 0.1);
+    border: none;
+    padding:10px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px; 
+    margin-top: 20px;  
+}
+
+.information{
+    position: relative;
+    
+}
+
+.thanksFull h2{
+    margin-top: 20px; 
+}
+
+/* *********************************THANKS TRANSITION */
+
+.thanksTransition{
+    
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+
+
+
+@media screen and (max-width: 359px){
+    .containerThanks{
+        max-width: 339px;
+        min-width: 210px;    
+    }
+}
+
+@media (min-width: 360px) and (max-width: 450px){
+    .containerThanks{
+        max-width: 375px;
+        min-width: 360px;
+    }
+}
